@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.abubaker.sorting.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="result"
+        android:layout_marginTop="43dp"
+        android:textSize="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/edit"
+        android:layout_alignStart="@+id/edit"
+        android:id="@+id/result"/>
+
+   <EditText
+       android:id="@+id/edit"
+       android:layout_width="368dp"
+       android:layout_height="wrap_content"
+       android:hint="Enter a Value: "
+       tools:layout_editor_absoluteY="89dp"
+       tools:layout_editor_absoluteX="8dp"
+       android:layout_marginTop="128dp"
+       android:layout_alignParentTop="true"
+       android:layout_alignParentRight="true"
+       android:layout_alignParentEnd="true"
+       android:textSize="30dp"/>
+
+
+
+
+
+    <Button
+        android:text="Accending Order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="171dp"
+        tools:layout_editor_absoluteX="118dp"
+        android:id="@+id/accendingorder"
+        android:onClick="acc"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/edit"
+        android:layout_alignRight="@+id/decendingorder"
+        android:layout_alignEnd="@+id/decendingorder" />
+
+
+    <Button
+        android:text="Decending Order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="231dp"
+        tools:layout_editor_absoluteX="118dp"
+        android:id="@+id/decendingorder"
+        android:onClick="dcc"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/accendingorder"
+        android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>
